@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="icon" type="image/png" href="icon.png" /> -->
+    <meta name="apple-mobile-web-app-title">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TODO app</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+        body {
+            max-width: 800px;
+            margin: auto;
+            padding: 1em;
+            font-family: 'Short Stack', cursive;
+            font-size: 1.2em;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 0.7em;
+            }
+        }
+
+        h2 {
+            margin-top: 2em;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 0.35em;
+        }
+    </style>
+    <link rel="stylesheet" href="{{url_for('static', filename='doodle.css')}}" />
+</head>
+
+<body class="doodle">
+
+    <main>
+        <h1>TODO app</h1>
+        <p>A simple TODO app.</p>
+        <p>Add a new todo item:</p>
+        <form action="{{ url_for('add') }}" method="POST"> 
+            <input type="text" name="todoitem" placeholder="Enter todo">
+            <input type="submit" name="submit" value="Add Item">
+        </form> 
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>status</th>
+                </tr>
+            </thead>
+            <!-- add jinja2 syntax -->
+            <tbody>
+                <!-- for i in incomplete tasks -->
+                <tr>
+                    <td>add jinja</td>
+                    <td><a style="color: red;" href="completed">pending</a></td>
+                </tr>
+                <!-- endfor -->
+                <!-- for i in completed tasks -->
+                <tr>
+                    <td>make index.html</td>
+                    <td><a href="incomplete">done</a></td>
+                </tr>
+                <!-- endfor -->
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
