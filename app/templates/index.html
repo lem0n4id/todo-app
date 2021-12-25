@@ -57,18 +57,18 @@
             </thead>
             <!-- add jinja2 syntax -->
             <tbody>
-                <!-- for i in incomplete tasks -->
+                {% for todo in incomplete %}
                 <tr>
-                    <td>add jinja</td>
-                    <td><a style="color: red;" href="completed">pending</a></td>
+                    <td>{{ todo.text }}</td>
+                    <td><a style="color: red;" href="{{ url_for('complete', id=todo.id) }}">pending</a></td>
                 </tr>
-                <!-- endfor -->
-                <!-- for i in completed tasks -->
+                {% endfor %}
+                {% for todo in complete %}
                 <tr>
-                    <td>make index.html</td>
-                    <td><a href="incomplete">done</a></td>
+                    <td>{{ todo.text }}</td>
+                    <td><a href="{{ url_for('incomplete', id=todo.id) }}">done</a></td>
                 </tr>
-                <!-- endfor -->
+                {% endfor %}
             </tbody>
         </table>
     </main>
