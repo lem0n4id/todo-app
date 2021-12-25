@@ -4,6 +4,13 @@
 
 This is a simple TODO app made using Flask.
 
+Packages used:
+- [DoodleCSS](https://github.com/chr15m/DoodleCSS) Special thanks to [Chris McCormick (@mccrmx)](https://twitter.com/mccrmx) :)
+- [Flask](https://flask.palletsprojects.com/en/2.0.x/)
+- [Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
+- Flask-Testing
+
+
 ## Setup and run
 
 Make sure you have python inslled
