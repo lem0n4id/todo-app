@@ -27,7 +27,11 @@ Make sure you have python inslled
     ```bash
     pip install -r requirements.txt
     ```
-4. Run!
+4. Run the app!
     ```bash
     python run.py
+    ```
+5. [optional] Run tests
+    ```bash
+    python tests.py
     ```
