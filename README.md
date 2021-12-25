@@ -25,13 +25,13 @@ Make sure you have python inslled
     ```
 3. Install required modules
     ```bash
-    pip install -r requirements.txt
+    $ pip install -r requirements.txt
     ```
 4. Run the app!
     ```bash
-    python run.py
+    $ python run.py
     ```
 5. [optional] Run tests
     ```bash
-    python tests.py
+    $ python tests.py
     ```
