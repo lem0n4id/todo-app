@@ -31,7 +31,6 @@ def incomplete(id):
   
     todo = Todo.query.filter_by(id=int(id)).first()
     todo.status = False
-    print(todo.text)
     db.session.commit()
   
     return redirect(url_for('index'))
