@@ -44,6 +44,8 @@
     <main>
         <h1>TODO app</h1>
         <p>A simple TODO app.</p>
+        <p>Click on the status to change it :)</p>
+        <br/>
         <p>Add a new todo item:</p>
         <form action="{{ url_for('add') }}" method="POST"> 
             <input type="text" name="todoitem" placeholder="Enter todo">
