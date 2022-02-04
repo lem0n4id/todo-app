@@ -1,5 +1,7 @@
 # TODO app
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/lem0n4id/todo-app)
+
 <img src="./preview.png">
 
 This is a simple TODO app made using Flask.
