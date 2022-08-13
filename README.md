@@ -15,7 +15,9 @@ Packages used:
 
 ## Setup and run
 
-Make sure you have python inslled
+Make sure you have python installed
+
+Terminal - bash (commands differ for cmd)
 
 1. Set up virtualenv
     ```bash
